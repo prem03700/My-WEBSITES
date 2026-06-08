@@ -324,7 +324,7 @@ body>*{position:relative;z-index:1}
 }
 .about-photo-sm:first-child::after{content:'Flex Banners 🖨️'}
 .about-photo-sm:last-child::after{content:'Quality Print ✅'}
-.about-text{ }
+/* .about-text{ } */ 
 .about-text p{color:var(--earth);line-height:1.8;margin-bottom:0.9rem;font-size:0.95rem;font-weight:500}
 .about-text p strong{color:var(--terracotta)}
 .about-callout{
@@ -477,8 +477,17 @@ body>*{position:relative;z-index:1}
 .rv-verify{font-size:0.68rem;color:var(--leaf);font-weight:700;margin-top:0.5rem;display:flex;align-items:center;gap:0.3rem}
 
 /* ── CONTACT ── */
+
 .contact-bg{background:var(--pale)}
-.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:start}
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 650px;       /* Keeps it perfectly proportioned on large screens */
+  margin: 0 auto;         /* Centers the info card perfectly on the screen */
+  gap: 3rem;
+  align-items: start;
+}
+
 .contact-board{
   background:var(--earth);
   border-radius:8px;
@@ -534,51 +543,7 @@ body>*{position:relative;z-index:1}
 .map-btn:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0!important}
 .mb-maps{background:var(--sky);color:white;border-color:#4a8bc0;box-shadow:3px 3px 0 #2c6490}
 .mb-wa{background:#25d366;color:white;border-color:#1aaa52;box-shadow:3px 3px 0 #0d7a38}
-/* The form */
-.contact-form{
-  background:var(--cream);
-  border:3px solid var(--earth);
-  border-radius:8px;
-  box-shadow:6px 6px 0 var(--mud);
-  overflow:hidden;
-}
-.form-header{
-  background:var(--leaf);
-  padding:1rem 1.2rem;border-bottom:3px solid var(--earth);
-  display:flex;align-items:center;gap:0.6rem;
-}
-.form-header h3{font-family:'Caveat',cursive;font-size:1.4rem;font-weight:700;color:white}
-.form-body{padding:1.5rem}
-.fg{margin-bottom:1rem}
-.fg label{display:block;font-size:0.8rem;font-weight:700;color:var(--earth);margin-bottom:0.35rem;text-transform:uppercase;letter-spacing:0.06em}
-.fg input,.fg textarea,.fg select{
-  width:100%;padding:0.65rem 0.9rem;
-  border:2.5px solid var(--earth);border-radius:5px;
-  font-family:'Baloo 2',cursive;font-size:0.9rem;color:var(--earth);
-  background:var(--pale);
-  outline:none;transition:border-color 0.2s,box-shadow 0.2s;resize:vertical;
-}
-.fg input:focus,.fg textarea:focus,.fg select:focus{
-  border-color:var(--terracotta);
-  box-shadow:0 0 0 3px rgba(193,68,14,0.12);
-  background:white;
-}
-.fg input.err,.fg textarea.err,.fg select.err{border-color:#c00;background:#fff5f5}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem}
-.success-msg{
-  display:none;background:#f0fdf4;border:2px solid #86efac;border-radius:6px;
-  padding:0.8rem 1rem;color:#15803d;font-weight:600;font-size:0.88rem;
-  text-align:center;margin-bottom:0.8rem;
-}
-.success-msg.show{display:block}
-.send-btn{
-  width:100%;font-family:'Caveat',cursive;font-size:1.25rem;font-weight:700;
-  padding:0.8rem;background:var(--terracotta);color:white;
-  border:3px solid var(--terra-light);border-radius:5px;
-  box-shadow:4px 4px 0 var(--mud);cursor:pointer;
-  transition:transform 0.15s,box-shadow 0.15s;
-}
-.send-btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--mud)}
+
 
 /* ── FAQ ── */
 .faq-bg{background:var(--warm-tan)}
@@ -755,7 +720,12 @@ footer::before{
 </head>
 <body>
 
-<!-- ── NAV ── -->
+<!-- ── NAV ──-----------------------------------------------------------------------------------------  
+ =======================================================================================================================================================================================
+ ==================================================================================================================================================
+ ===================================================================================================================================================================
+ 
+ -->
 <nav id="nav">
   <a href="#" class="nav-brand" onclick="gp('home',null)">
     <div class="nav-icon">MD</div>
@@ -784,7 +754,7 @@ footer::before{
   <a href="#" onclick="gp('portfolio',null);closeM()">🖼️ Gallery</a>
   <a href="#" onclick="gp('reviews',null);closeM()">⭐ Reviews</a>
   <a href="#" onclick="gp('contact',null);closeM()">📞 Contact</a>
-  <a href="tel:+919963318397">📞 Call — +91 8247699591</a>
+  <a href="tel:+918247699591">📞 Call — +91 8247699591</a>
 </div>
 
 <!-- ═══════════ HOME ═══════════ -->
@@ -800,7 +770,7 @@ footer::before{
       <div class="hero-telugu">ప్రొఫెషనల్ ప్రింటింగ్ సేవలు</div>
       <p class="hero-tagline">
         మీ పని మా బాధ్యత! 🙏<br>
-        <b>Fast printing. Good quality. Village rates.</b><br>
+        <b>Fast printing. Good quality. Best prices.</b><br>
         Banners • Cards • Flex • Digital — అన్నీ చేస్తాం!
       </p>
       <div class="hero-chips">
@@ -808,10 +778,9 @@ footer::before{
         <span class="chip">🎴 Visiting Cards</span>
         <span class="chip">🎪 Banners</span>
         <span class="chip">🕐 24 Hrs Open</span>
-        <span class="chip">💰 Cheap Rates</span>
+        <span class="chip">💰 Affordable prices</span>
       </div>
       <div class="hero-btns">
-        <a href="#" onclick="gp('contact',null)" class="stamp-btn stamp-red">📋 order </a>
         <a href="https://wa.me/918247699591" target="_blank" class="stamp-btn stamp-outline">💬 WhatsApp చేయండి</a>
       </div>
       <div class="hero-rating">
@@ -1116,35 +1085,6 @@ footer::before{
           </div>
         </div>
       </div>
-      <div class="rev-r">
-        <div class="contact-form">
-          <div class="form-header"><span style="font-size:1.4rem">📋</span><h3>Quote Request చేయండి</h3></div>
-          <div class="form-body">
-            <div class="success-msg" id="fsucc">✅ పంపారు! మేము soon contact చేస్తాం 🙏</div>
-            <div class="form-row">
-              <div class="fg"><label>మీ పేరు *</label><input type="text" id="fn" placeholder="Your name ఇక్కడ రాయండి"></div>
-              <div class="fg"><label>Phone Number *</label><input type="tel" id="fp" placeholder="+91 XXXXX XXXXX"></div>
-            </div>
-            <div class="fg"><label>ఏ Service కావాలి? *</label>
-              <select id="fs">
-                <option value="">Select చేయండి...</option>
-                <option>Flex Printing</option>
-                <option>Banner Printing</option>
-                <option>Vinyl Printing</option>
-                <option>Digital Printing</option>
-                <option>Business / Visiting Cards</option>
-                <option>Wedding Cards</option>
-                <option>Brochures / Pamphlets</option>
-                <option>Posters / Stickers</option>
-                <option>Bill Books / ID Cards</option>
-                <option>Photo Printing</option>
-                <option>Custom Printing</option>
-              </select>
-            </div>
-            <div class="fg"><label>Quantity & Details</label><textarea id="fm" rows="3" placeholder="ఎంత కావాలి, ఏ size కావాలి, urgent గా కావాలా — చెప్పండి..."></textarea></div>
-            <button class="send-btn" onclick="submitF()">📤 Send చేయండి!</button>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -1182,7 +1122,7 @@ footer::before{
       <div class="ft-social">
         <a class="soc" href="https://wa.me/918247699591" target="_blank">💬</a>
         <a class="soc" href="tel:+918247699591">📞</a>
-        <a class="soc" href="https://maps.google.com/?q=Arumbaka+AP+522309" target="_blank">📍</a>
+        <a class="soc" href="https://maps.app.goo.gl/ZQf1L7pJaJeDxdQv8" target="_blank">📍</a>
       </div>
     </div>
     <div class="ft-col">
