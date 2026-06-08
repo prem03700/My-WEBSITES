@@ -58,15 +58,21 @@ body>*{position:relative;z-index:1}
 }
 .nav-brand{display:flex;align-items:center;gap:0.7rem;text-decoration:none}
 .nav-icon{
-  width:48px;height:48px;
-  background:var(--terracotta);
+  width:48px;
+  height:48px;
   border-radius:6px;
   border:3px solid var(--turmeric);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Caveat',cursive;font-weight:700;font-size:1rem;color:var(--turmeric);
-  transform:rotate(-2deg);
   box-shadow:3px 3px 0 var(--turmeric);
+  overflow:hidden;
   flex-shrink:0;
+  transform:rotate(-2deg);
+}
+
+.nav-icon img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 .nav-title{
   font-family:'Caveat',cursive;
@@ -727,8 +733,10 @@ footer::before{
  
  -->
 <nav id="nav">
-  <a href="#" class="nav-brand" onclick="gp('home',null)">
-    <div class="nav-icon">MD</div>
+  <a href="#" class="nav-brand"  onclick="gp('home',null)">
+    <div class="nav-icon">
+    <img src="Maa digitals logo with yellow brown.png" alt="MAA Digitals Logo">
+    </div>
     <div>
       <div class="nav-title">MAA Digitals</div>
       <div class="nav-sub">Flex Printing • Arumbaka</div>
@@ -765,7 +773,7 @@ footer::before{
     <div class="hero-kite">🪁</div>
     <div class="hero-flower">🌸</div>
     <div class="hero-inner">
-      <div class="hero-board"><span>✦ Arumbaka, Andhra Pradesh ✦</span></div>
+      <div class="hero-board"><span>✦ Arumbaka,Cherukupalli, Andhra Pradesh ✦</span></div>
       <h1>MAA <span class="hi">Digitals</span><br>Flex Printing</h1>
       <div class="hero-telugu">ప్రొఫెషనల్ ప్రింటింగ్ సేవలు</div>
       <p class="hero-tagline">
@@ -796,7 +804,7 @@ footer::before{
       <div class="feat-card">
         <div class="feat-emoji">⚡</div>
         <div class="feat-name">Fast Delivery</div>
-        <div class="feat-desc">15 minutes లో ready!</div>
+        <div class="feat-desc">30 minutes లో ready!</div>
       </div>
       <div class="feat-card">
         <div class="feat-emoji">🏅</div>
@@ -826,27 +834,27 @@ footer::before{
       </div>
       <div class="services-grid">
         <div class="svc-card rev">
-          <div class="svc-img"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&q=75" alt="Flex Printing"><span class="svc-ribbon">Most Popular</span></div>
+          <div class="svc-img"><img src="https://thumbs.dreamstime.com/b/printing-activity-progress-flex-job-process-inside-small-commercial-business-setup-271709425.jpg" alt="Flex Printing"><span class="svc-ribbon">Most Popular</span></div>
           <div class="svc-body"><h3>🏮 Flex Printing</h3><p>Shops, events, roads అన్ని చోట్ల. UV colours long lasting గా ఉంటాయి!</p><div class="svc-tags"><span class="svc-t">Outdoor</span><span class="svc-t">Any Size</span><span class="svc-t">Durable</span></div></div>
         </div>
         <div class="svc-card rev">
-          <div class="svc-img"><img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&q=75" alt="Banner"></div>
+          <div class="svc-img"><img src="https://smodprint.com/wp-content/uploads/2018/09/Large-Format-Flex-Banner-Print.jpg" alt="Banner"></div>
           <div class="svc-body"><h3>🎪 Banner Printing</h3><p>Events, functions, festivals కి colourful banners. Any design, any size!</p><div class="svc-tags"><span class="svc-t">Events</span><span class="svc-t">Colourful</span></div></div>
         </div>
         <div class="svc-card rev">
-          <div class="svc-img"><img src="https://images.unsplash.com/photo-1591280063444-d3c514eb6e13?w=500&q=75" alt="Visiting Cards"><span class="svc-ribbon">Express</span></div>
+          <div class="svc-img"><img src="https://img.magnific.com/free-vector/beautiful-full-color-business-card_1035-4188.jpg?semt=ais_hybrid&w=740&q=80" alt="Visiting Cards"><span class="svc-ribbon">Express</span></div>
           <div class="svc-body"><h3>🎴 Visiting Cards</h3><p>Business, visiting cards — 15 minutes లో! Professional look, village price.</p><div class="svc-tags"><span class="svc-t">Same Day</span><span class="svc-t">Bulk Discount</span></div></div>
         </div>
         <div class="svc-card rev">
-          <div class="svc-img"><img src="https://images.unsplash.com/photo-1601623562990-fc3cf94543c8?w=500&q=75" alt="Wedding Cards"></div>
+          <div class="svc-img"><img src="https://www.picsy.in/images/contentimages/images/Rmarriage_invitation_messages_fr.jpg" alt="Wedding Cards"></div>
           <div class="svc-body"><h3>💒 Wedding Cards</h3><p>పెళ్ళి cards చాలా beautiful గా print చేస్తాం. Custom design తో!</p><div class="svc-tags"><span class="svc-t">Custom Design</span><span class="svc-t">Premium</span></div></div>
         </div>
         <div class="svc-card rev">
-          <div class="svc-img"><img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=500&q=75" alt="Digital Print"></div>
+          <div class="svc-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryDSuaL8JLAOiKYVrqamBMoOfs_6DyAgrUg&s" alt="Digital Print"></div>
           <div class="svc-body"><h3>📄 Digital Printing</h3><p>Brochures, flyers, pamphlets — photo quality లో fast printing!</p><div class="svc-tags"><span class="svc-t">Photo Quality</span><span class="svc-t">Fast</span></div></div>
         </div>
         <div class="svc-card rev">
-          <div class="svc-img"><img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500&q=75" alt="Stickers"></div>
+          <div class="svc-img"><img src="https://orchiddigitals.com/wp-content/uploads/2020/06/Gold-metal-finish-stickers.jpg.webp" alt="Stickers"></div>
           <div class="svc-body"><h3>🏷️ Stickers & Labels</h3><p>Product labels, stickers waterproof గా ఉంటాయి. Any shape కావాలంటే!</p><div class="svc-tags"><span class="svc-t">Waterproof</span><span class="svc-t">Any Shape</span></div></div>
         </div>
       </div>
@@ -861,7 +869,7 @@ footer::before{
     <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem">
       <div>
         <div style="font-family:'Caveat',cursive;font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;color:white;line-height:1.2">
-          "Fast print with good quality in 15 minutes!" 🙌
+          "Fast print with good quality in 30 minutes!" 🙌
         </div>
         <div style="color:rgba(255,255,255,0.7);font-size:0.88rem;margin-top:0.4rem;font-weight:500">— Happy Customer, Arumbaka</div>
       </div>
@@ -872,7 +880,9 @@ footer::before{
     </div>
   </section>
 
-</div><!-- end home -->
+</div>
+
+<!-- end home -->
 
 <!-- ═══════════ ABOUT ═══════════ -->
 <div class="page" id="page-about">
@@ -887,7 +897,7 @@ footer::before{
     <div class="wrap about-grid">
       <div class="about-photo-col rev-l">
         <div class="about-photo-top">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75" alt="Our shop">
+          <img src="maa digitals banner.png" alt="Our shop">
         </div>
         <div class="about-photo-row">
           <div class="about-photo-sm"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&q=75" alt="Flex banners"></div>
@@ -898,7 +908,7 @@ footer::before{
         <div class="sec-tag">మా కథ</div>
         <h2 class="sec-head">మీ <span class="red">Print</span> Partner 🤝</h2>
         <p><strong>MAA DIGITALS FLEX PRINTING</strong> — Arumbaka లో ఉన్న మీ అందరి printing shop. Cherukupalli road పై, New Ghumaghumalu దగ్గర మీకు చాలా సులభంగా కనుక్కోవచ్చు!</p>
-        <p>మేము flex printing, digital printing, visiting cards, wedding cards, banners అన్నీ చేస్తాం. మీ design ఉంటే అది print చేస్తాం, లేదంటే మేమే design చేస్తాం!</p>
+        <p>మేము flex printing, visiting cards, wedding cards, banners అన్నీ చేస్తాం. మీ design ఉంటే అది print చేస్తాం, లేదంటే మేమే design చేస్తాం!</p>
         <p>మా goal ఒక్కటే — మీకు <strong>fast గా, quality గా, affordable price లో</strong> print deliver చేయడం. రాత్రి అయినా, పగలు అయినా — మేము 24 hours open ఉంటాం! 🌙</p>
         <div class="about-callout">
           "30 నిమిషాల్లో print ready — మాట ఇస్తున్నాం!" ✅
@@ -908,7 +918,7 @@ footer::before{
           <span class="badge">🕐 24/7 Open</span>
           <span class="badge">⭐ 5.0 Rating</span>
           <span class="badge">💰 affordable Rates</span>
-    <!-- <span class="badge">🌿 Fresh Prints Daily</span>   -->
+         <span class="badge"> Prints Daily</span>
         </div>
         <div style="margin-top:1.5rem">
           <a href="tel:+918247699591" class="stamp-btn stamp-red" style="display:inline-flex;text-decoration:none">📞 మాతో మాట్లాడండి</a>
@@ -930,21 +940,19 @@ footer::before{
   <section class="sec services-bg">
     <div class="wrap">
       <div class="services-grid">
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&q=75" alt="Flex"><span class="svc-ribbon">Most Popular</span></div><div class="svc-body"><h3>🏮 Flex Printing</h3><p>UV resistant outdoor flex. Shops, events, roads అన్ని చోట్ల perfect గా ఉంటుంది.</p><div class="svc-tags"><span class="svc-t">Outdoor</span><span class="svc-t">UV Resistant</span><span class="svc-t">Any Size</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&q=75" alt="Banner"><span class="svc-ribbon">Events</span></div><div class="svc-body"><h3>🎪 Banner Printing</h3><p>Colourful banners for functions, events, shops. Any size, fast delivery!</p><div class="svc-tags"><span class="svc-t">Custom Size</span><span class="svc-t">Fast</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=75" alt="Vinyl"></div><div class="svc-body"><h3>🎨 Vinyl Printing</h3><p>Self-adhesive vinyl for walls, vehicles, boards. Long lasting గా ఉంటుంది!</p><div class="svc-tags"><span class="svc-t">Self-Adhesive</span><span class="svc-t">Durable</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=500&q=75" alt="Digital"></div><div class="svc-body"><h3>📄 Digital Printing</h3><p>Brochures, flyers అన్నీ photo quality లో. Office కి, business కి perfect!</p><div class="svc-tags"><span class="svc-t">Photo Quality</span><span class="svc-t">Full Color</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1591280063444-d3c514eb6e13?w=500&q=75" alt="Business Cards"><span class="svc-ribbon">Express</span></div><div class="svc-body"><h3>💼 Business Cards</h3><p>Professional business cards — matte, glossy, laminated. 15 min లో ready!</p><div class="svc-tags"><span class="svc-t">Same Day</span><span class="svc-t">Matt & Gloss</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1529651737248-dad5e287768e?w=500&q=75" alt="Visiting Cards"></div><div class="svc-body"><h3>🎴 Visiting Cards</h3><p>Elegant visiting cards bulk లో కావాలంటే discount ఉంటుంది!</p><div class="svc-tags"><span class="svc-t">Bulk Discount</span><span class="svc-t">Custom Design</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1601623562990-fc3cf94543c8?w=500&q=75" alt="Wedding Cards"></div><div class="svc-body"><h3>💒 Wedding Cards</h3><p>పెళ్ళి invitations చాలా beautiful గా print చేస్తాం. Custom design free!</p><div class="svc-tags"><span class="svc-t">Custom Design</span><span class="svc-t">Premium Paper</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=500&q=75" alt="Brochures"></div><div class="svc-body"><h3>📋 Brochures</h3><p>Tri-fold, bi-fold brochures business కి, schools కి, shops కి.</p><div class="svc-tags"><span class="svc-t">Tri-Fold</span><span class="svc-t">Bi-Fold</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=75" alt="Posters"></div><div class="svc-body"><h3>🖼️ Posters</h3><p>Events, political, movie posters — A0 to A4 sizes. Bright colours!</p><div class="svc-tags"><span class="svc-t">Any Size</span><span class="svc-t">High Res</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&q=75" alt="Pamphlets"></div><div class="svc-body"><h3>📜 Pamphlets</h3><p>Mass distribution కి cheap pamphlets. Village lo distribute చేయడానికి perfect!</p><div class="svc-tags"><span class="svc-t">Bulk Pricing</span><span class="svc-t">Fast Turnaround</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500&q=75" alt="Stickers"></div><div class="svc-body"><h3>🏷️ Stickers & Labels</h3><p>Waterproof stickers, product labels any shape లో cut చేస్తాం!</p><div class="svc-tags"><span class="svc-t">Waterproof</span><span class="svc-t">Cut-to-Shape</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=500&q=75" alt="Bill Books"></div><div class="svc-body"><h3>📒 Bill Books</h3><p>Business కి bill books, receipt books customized గా చేస్తాం.</p><div class="svc-tags"><span class="svc-t">Single/Duplicate</span><span class="svc-t">Custom</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&q=75" alt="ID Cards"></div><div class="svc-body"><h3>🪪 ID Cards</h3><p>School, office ID cards with photo and QR code printing. Lamination తో!</p><div class="svc-tags"><span class="svc-t">Photo Print</span><span class="svc-t">Lamination</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&q=75" alt="Photo Print"></div><div class="svc-body"><h3>📸 Photo Printing</h3><p>Studio quality photos. Passport size, enlargements, glossy or matte paper.</p><div class="svc-tags"><span class="svc-t">Glossy & Matte</span><span class="svc-t">Passport Size</span></div></div></div>
-        <div class="svc-card rev"><div class="svc-img"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&q=75" alt="Custom"><span class="svc-ribbon">Custom</span></div><div class="svc-body"><h3>✨ Custom Printing</h3><p>మీకు ఏది కావాలంటే చేస్తాం! Call లేదా WhatsApp చేయండి — discuss చేద్దాం.</p><div class="svc-tags"><span class="svc-t">Any Format</span><span class="svc-t">Free Consult</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://thumbs.dreamstime.com/b/printing-activity-progress-flex-job-process-inside-small-commercial-business-setup-271709425.jpg" alt="Flex"><span class="svc-ribbon">Most Popular</span></div><div class="svc-body"><h3>🏮 Flex Printing</h3><p>UV resistant outdoor flex. Shops, events, roads అన్ని చోట్ల perfect గా ఉంటుంది.</p><div class="svc-tags"><span class="svc-t">Outdoor</span><span class="svc-t">UV Resistant</span><span class="svc-t">Any Size</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://smodprint.com/wp-content/uploads/2018/09/Large-Format-Flex-Banner-Print.jpg" alt="Banner"><span class="svc-ribbon">Events</span></div><div class="svc-body"><h3>🎪 Banner Printing</h3><p>Colourful banners for functions, events, shops. Any size, fast delivery!</p><div class="svc-tags"><span class="svc-t">Custom Size</span><span class="svc-t">Fast</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://m2.printrust.com/pub/media/catalog/product/cache/7a82a536cf7000c5c203a9b8976a76ad/C/l/Clear_Vinyl.jpg" alt="Vinyl"></div><div class="svc-body"><h3>🎨 Vinyl Printing</h3><p>Self-adhesive vinyl for walls, vehicles, boards. Long lasting గా ఉంటుంది!</p><div class="svc-tags"><span class="svc-t">Self-Adhesive</span><span class="svc-t">Durable</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryDSuaL8JLAOiKYVrqamBMoOfs_6DyAgrUg&s" alt="Digital"></div><div class="svc-body"><h3>📄 Digital Printing</h3><p>Brochures, flyers అన్నీ photo quality లో. Office కి, business కి perfect!</p><div class="svc-tags"><span class="svc-t">Photo Quality</span><span class="svc-t">Full Color</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://img.magnific.com/free-vector/beautiful-full-color-business-card_1035-4188.jpg?semt=ais_hybrid&w=740&q=80" alt="Business Cards"><span class="svc-ribbon">Express</span></div><div class="svc-body"><h3>💼 Business Cards</h3><p>Professional business cards — matte, glossy, laminated. 15 min లో ready!</p><div class="svc-tags"><span class="svc-t">Same Day</span><span class="svc-t">Matt & Gloss</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://www.picsy.in/images/contentimages/images/Rmarriage_invitation_messages_fr.jpg" alt="Wedding Cards"></div><div class="svc-body"><h3>💒 Wedding Cards</h3><p>పెళ్ళి invitations చాలా beautiful గా print చేస్తాం. Custom design free!</p><div class="svc-tags"><span class="svc-t">Custom Design</span><span class="svc-t">Premium Paper</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://orchiddigitals.com/wp-content/uploads/2020/06/collage-of-fliers-and-leaflets-1024x512.jpg.webp" alt="Brochures"></div><div class="svc-body"><h3>📋 Brochures</h3><p>Tri-fold, bi-fold brochures business కి, schools కి, shops కి.</p><div class="svc-tags"><span class="svc-t">Tri-Fold</span><span class="svc-t">Bi-Fold</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://i.etsystatic.com/28257993/r/il/e2758b/5235766531/il_fullxfull.5235766531_omra.jpg" alt="Posters"></div><div class="svc-body"><h3>🖼️ Posters</h3><p>Events, political, movie posters — A0 to A4 sizes. Bright colours!</p><div class="svc-tags"><span class="svc-t">Any Size</span><span class="svc-t">High Res</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://www.dtps.com.au/wp-content/uploads/2025/10/What-is-the-difference-between-sticker-printing-and-label-printing.webp" alt="Stickers"></div><div class="svc-body"><h3>🏷️ Stickers & Labels</h3><p>Waterproof stickers, product labels any shape లో cut చేస్తాం!</p><div class="svc-tags"><span class="svc-t">Waterproof</span><span class="svc-t">Cut-to-Shape</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://www.printigly.in/wp-content/uploads/2024/05/Custom-Bill-Books-1.jpg.webp" alt="Bill Books"></div><div class="svc-body"><h3>📒 Bill Books</h3><p>Business కి bill books, receipt books customized గా చేస్తాం.</p><div class="svc-tags"><span class="svc-t">Single/Duplicate</span><span class="svc-t">Custom</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://www.e-arc.in/wp-content/uploads/2024/10/Business-Id-Cards-1.png" alt="ID Cards"></div><div class="svc-body"><h3>🪪 ID Cards</h3><p>School, office ID cards with photo and QR code printing. Lamination తో!</p><div class="svc-tags"><span class="svc-t">Photo Print</span><span class="svc-t">Lamination</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://www.printique.com/wp-content/uploads/2019/07/best-photo-prints1.jpg" alt="Photo Print"></div><div class="svc-body"><h3>📸 Photo Printing</h3><p>Studio quality photos. Passport size, enlargements, glossy or matte paper.</p><div class="svc-tags"><span class="svc-t">Glossy & Matte</span><span class="svc-t">Passport Size</span></div></div></div>
+        <div class="svc-card rev"><div class="svc-img"><img src="https://img.magnific.com/free-photo/hands-working-network-graphic-overlay-banner-desk_53876-101278.jpg?semt=ais_hybrid&w=740&q=80" alt="Custom"><span class="svc-ribbon">Custom</span></div><div class="svc-body"><h3>✨ Custom Printing</h3><p>మీకు ఏది కావాలంటే చేస్తాం! Call లేదా WhatsApp చేయండి — discuss చేద్దాం.</p><div class="svc-tags"><span class="svc-t">Any Format</span><span class="svc-t">Free Consult</span></div></div></div>
       </div>
     </div>
   </section>
@@ -967,15 +975,15 @@ footer::before{
         <button class="pf-btn" data-f="event">Events</button>
       </div>
       <div class="port-grid rev" id="pgrid">
-        <div class="port-tile big" data-c="flex" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=75" alt="Flex Banner"></div><div class="port-lbl">🏮 Flex Banner — Outdoor Shop Board</div><div class="port-overlay"></div></div>
-        <div class="port-tile" data-c="digital" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=500&q=75" alt="Digital Print"></div><div class="port-lbl">📄 Digital Brochure</div><div class="port-overlay"></div></div>
-        <div class="port-tile" data-c="cards" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1591280063444-d3c514eb6e13?w=500&q=75" alt="Cards"></div><div class="port-lbl">🎴 Visiting Card Set</div><div class="port-overlay"></div></div>
-        <div class="port-tile" data-c="event" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&q=75" alt="Event Banner"></div><div class="port-lbl">🎪 Event Banner</div><div class="port-overlay"></div></div>
-        <div class="port-tile" data-c="cards" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1601623562990-fc3cf94543c8?w=500&q=75" alt="Wedding Card"></div><div class="port-lbl">💒 Wedding Invitation</div><div class="port-overlay"></div></div>
-        <div class="port-tile big" data-c="digital" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=900&q=75" alt="Marketing"></div><div class="port-lbl">📋 Marketing Materials Pack</div><div class="port-overlay"></div></div>
-        <div class="port-tile" data-c="flex" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=75" alt="Vinyl"></div><div class="port-lbl">🎨 Vinyl Sign Board</div><div class="port-overlay"></div></div>
-        <div class="port-tile" data-c="digital" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=75" alt="Poster"></div><div class="port-lbl">🖼️ Promotional Poster</div><div class="port-overlay"></div></div>
-        <div class="port-tile" data-c="event" onclick="openLb(this)"><div class="port-img"><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&q=75" alt="Photo Print"></div><div class="port-lbl">📸 Photo Prints</div><div class="port-overlay"></div></div>
+        <div class="port-tile big" data-c="flex" onclick="openLb(this)"><div class="port-img"><img src="https://5.imimg.com/data5/SELLER/Default/2025/11/556728318/OP/OF/EP/255447850/flex-advertising-board-with-frame-500x500.png" alt="Flex Banner"></div><div class="port-lbl">🏮 Flex Banner — Outdoor Shop Board</div><div class="port-overlay"></div></div>
+        <div class="port-tile" data-c="digital" onclick="openLb(this)"><div class="port-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0VqG4ZKIfL-_BujLkL9QyOXGqhJKk_vQ-9Q&s" alt="Digital Print"></div><div class="port-lbl">📄 Digital Brochure</div><div class="port-overlay"></div></div>
+        <div class="port-tile" data-c="cards" onclick="openLb(this)"><div class="port-img"><img src="https://m.media-amazon.com/images/I/41TdGrK+tcL.jpg" alt="Cards"></div><div class="port-lbl">🎴 Visiting Card Set</div><div class="port-overlay"></div></div>
+        <div class="port-tile" data-c="event" onclick="openLb(this)"><div class="port-img"><img src="https://img.freepik.com/free-vector/horizontal-banner-template-class-2023-graduation_23-2150306944.jpg?semt=ais_hybrid&w=740&q=80" alt="Event Banner"></div><div class="port-lbl">🎪 Event Banner</div><div class="port-overlay"></div></div>
+        <div class="port-tile" data-c="cards" onclick="openLb(this)"><div class="port-img"><img src="https://nutcaseshop.com/cdn/shop/files/7b_c54d96d8-e623-42af-b882-7504eb5b1c20.jpg?v=1707142168" alt="Wedding Card"></div><div class="port-lbl">💒 Wedding Invitation</div><div class="port-overlay"></div></div>
+        <div class="port-tile big" data-c="digital" onclick="openLb(this)"><div class="port-img"><img src="https://chawadibucket.s3.amazonaws.com/2019/12/01053354/Marketing-Material.jpg" alt="Marketing"></div><div class="port-lbl">📋 Marketing Materials Pack</div><div class="port-overlay"></div></div>
+        <div class="port-tile" data-c="flex" onclick="openLb(this)"><div class="port-img"><img src="https://images.jdmagicbox.com/quickquotes/images_main/rectangular-color-coated-vinyl-sign-board-2225531845-bxx7nitt.jpg" alt="Vinyl"></div><div class="port-lbl">🎨 Vinyl Sign Board</div><div class="port-overlay"></div></div>
+        <div class="port-tile" data-c="digital" onclick="openLb(this)"><div class="port-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh-JEPLYx3OpZrxgN5EesEVgLwQe5SVBGH8g&s" alt="Poster"></div><div class="port-lbl">🖼️ Promotional Poster</div><div class="port-overlay"></div></div>
+        <div class="port-tile" data-c="event" onclick="openLb(this)"><div class="port-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZ_z9YeyIfpVVzzpta2p6OjoyNDiZMCVoLg&s" alt="Photo Print"></div><div class="port-lbl">📸 Photo Prints</div><div class="port-overlay"></div></div>
       </div>
     </div>
   </section>
@@ -1070,7 +1078,7 @@ footer::before{
           <div class="contact-list">
             <div class="cd"><span class="cd-ico">🏠</span><div class="cd-txt"><h4>Address</h4><p>D NO: 2-73, Cherukupalli To Arumbaka Rd,<br>Beside New Ghumaghumalu, Arumbaka, AP 522309</p></div></div>
             <div class="cd"><span class="cd-ico">📞</span><div class="cd-txt"><h4>Phone</h4><a href="tel:+918247699591">+91 8247699591</a></div></div>
-            <div class="cd"><span class="cd-ico">💬</span><div class="cd-txt"><h4>WhatsApp</h4><a href="https://wa.me/918247699591?text=Nenu%20printing%20kavali!" target="_blank">WhatsApp లో message చేయండి</a></div></div>
+            <div class="cd"><span class="cd-ico">💬</span><div class="cd-txt"><h4>WhatsApp</h4><a href="https://wa.me/918247699591?text=printing%20kavali !" target="_blank">WhatsApp లో message చేయండి</a></div></div>
             <div class="cd"><span class="cd-ico">🕐</span><div class="cd-txt"><h4>Timing</h4><p>24 Hours Open <span class="open-tag">● Open Now</span></p></div></div>
             <div class="cd"><span class="cd-ico">⭐</span><div class="cd-txt"><h4>Rating</h4><p>5.0 ★ — Google Reviews లో Top!</p></div></div>
           </div>
@@ -1079,7 +1087,7 @@ footer::before{
             <h4>MAA Digitals Flex Printing</h4>
             <p>Cherukupalli Road, Arumbaka,<br>Andhra Pradesh 522309</p>
             <div class="map-btns">
-              <a href="https://maps.google.com/?q=Arumbaka+Andhra+Pradesh+522309" target="_blank" class="map-btn mb-maps">🗺️ Google Maps</a>
+              <a href="https://maps.app.goo.gl/ZQf1L7pJaJeDxdQv8" target="_blank" class="map-btn mb-maps">🗺️ Google Maps</a>
               <a href="https://wa.me/918247699591" target="_blank" class="map-btn mb-wa">💬 WhatsApp</a>
             </div>
           </div>
@@ -1160,13 +1168,13 @@ footer::before{
     </div>
   </div>
   <div class="footer-bot">
-    <p>© 2025 MAA Digitals Flex Printing | Arumbaka, AP 522309 | Flex Printing Arumbaka · Digital Printing Cherukupalli</p>
+    <p>© 2026 MAA Digitals Flex Printing | Arumbaka, AP 522309 | Flex Printing Arumbaka · Digital Printing Cherukupalli</p>
     <p>Made with ❤️ in Arumbaka village</p>
   </div>
 </footer>
 
 <!-- FLOATING BUTTONS -->
-<a href="https://wa.me/918247699591?text=Nenu%20printing%20kavali!%20MAA%20Digitals" target="_blank" class="flt-wa">💬</a>
+<a href="https://wa.me/918247699591?text=printing%20kavali!%20MAA%20Digitals" target="_blank" class="flt-wa">💬</a>
 <a href="tel:+918247699591" class="flt-call">📞</a>
 <button class="back-top" id="btop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
 
