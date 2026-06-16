@@ -708,7 +708,7 @@ footer::before{
   .ham{display:flex}
   .feat-band-inner{grid-template-columns:1fr 1fr}
   .feat-card{border-right:none;border-bottom:1px dashed rgba(255,255,255,0.1)}
-  .feat-card:last-child,.feat-card:nth-child(2){border-bottom:none}
+  .feat-card:last-child,.feat-card:nth-child(3){border-bottom:none}
   .form-row{grid-template-columns:1fr}
   .footer-main{grid-template-columns:1fr;gap:1.5rem}
   .footer-bot{flex-direction:column;text-align:center}
@@ -735,7 +735,7 @@ footer::before{
 <nav id="nav">
   <a href="#" class="nav-brand"  onclick="gp('home',null)">
     <div class="nav-icon">
-    <img src="       " alt="MAA Digitals Logo">
+    <img src="https://i.ibb.co/M5Rsw7YQ/Maa-digitals-logo-with-yellow-brown.png" alt="MAA Digitals Logo">
     </div>
     <div>
       <div class="nav-title">MAA Digitals</div>
@@ -749,7 +749,7 @@ footer::before{
     <a href="#" onclick="gp('portfolio',this)">🖼️ Gallery</a>
     <a href="#" onclick="gp('reviews',this)">⭐ Reviews</a>
     <a href="#" onclick="gp('contact',this)">📞 Contact</a>
-    <a href="tel:+919963318397" class="nav-call">📞 Call Now</a>
+    <a href="tel:+918247699591" class="nav-call">📞 Call Now</a>
   </div>
   <button class="ham" id="ham" onclick="togMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -875,7 +875,7 @@ footer::before{
       </div>
       <div style="display:flex;gap:0.8rem;flex-wrap:wrap">
         <a href="https://wa.me/918247699591" target="_blank" class="stamp-btn" style="background:white;color:var(--terracotta);border-color:rgba(255,255,255,0.5);border:3px solid;box-shadow:3px 3px 0 rgba(0,0,0,0.2);font-family:'Caveat',cursive;font-size:1.1rem;font-weight:700;padding:0.6rem 1.4rem;border-radius:4px;display:inline-flex;align-items:center;gap:0.4rem;text-decoration:none">💬 WhatsApp Order</a>
-        <a href="tel:+919963318397" class="stamp-btn" style="background:rgba(255,255,255,0.15);color:white;border:3px solid rgba(255,255,255,0.4);font-family:'Caveat',cursive;font-size:1.1rem;font-weight:700;padding:0.6rem 1.4rem;border-radius:4px;display:inline-flex;align-items:center;gap:0.4rem;text-decoration:none;box-shadow:3px 3px 0 rgba(0,0,0,0.15)">📞 Call చేయండి</a>
+        <a href="tel:+918247699591" class="stamp-btn" style="background:rgba(255,255,255,0.15);color:white;border:3px solid rgba(255,255,255,0.4);font-family:'Caveat',cursive;font-size:1.1rem;font-weight:700;padding:0.6rem 1.4rem;border-radius:4px;display:inline-flex;align-items:center;gap:0.4rem;text-decoration:none;box-shadow:3px 3px 0 rgba(0,0,0,0.15)">📞 Call చేయండి</a>
       </div>
     </div>
   </section>
@@ -897,7 +897,7 @@ footer::before{
     <div class="wrap about-grid">
       <div class="about-photo-col rev-l">
         <div class="about-photo-top">
-          <img src="       " alt="Our shop">
+          <img src=" https://i.ibb.co/4vYGSGs/maa-digitals-banner.png  " alt="Our shop">
         </div>
         <div class="about-photo-row">
           <div class="about-photo-sm"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&q=75" alt="Flex banners"></div>
@@ -918,7 +918,6 @@ footer::before{
           <span class="badge">🕐 24/7 Open</span>
           <span class="badge">⭐ 5.0 Rating</span>
           <span class="badge">💰 affordable Rates</span>
-         <span class="badge"> Prints Daily</span>
         </div>
         <div style="margin-top:1.5rem">
           <a href="tel:+918247699591" class="stamp-btn stamp-red" style="display:inline-flex;text-decoration:none">📞 మాతో మాట్లాడండి</a>
@@ -1079,7 +1078,7 @@ footer::before{
             <div class="cd"><span class="cd-ico">🏠</span><div class="cd-txt"><h4>Address</h4><p>D NO: 2-73, Cherukupalli To Arumbaka Rd,<br>Beside New Ghumaghumalu, Arumbaka, AP 522309</p></div></div>
             <div class="cd"><span class="cd-ico">📞</span><div class="cd-txt"><h4>Phone</h4><a href="tel:+918247699591">+91 8247699591</a></div></div>
             <div class="cd"><span class="cd-ico">💬</span><div class="cd-txt"><h4>WhatsApp</h4><a href="https://wa.me/918247699591?text=printing%20kavali !" target="_blank">WhatsApp లో message చేయండి</a></div></div>
-            <div class="cd"><span class="cd-ico">🕐</span><div class="cd-txt"><h4>Timing</h4><p>24 Hours Open <span class="open-tag">● Open Now</span></p></div></div>
+            <div class="cd"><span class="cd-ico">🕐</span><div class="cd-txt"><h4>Timing</h4><p>24 Hours Open <span class="open-tag" id="openTag">● Open Now</span></p></div></div> 
             <div class="cd"><span class="cd-ico">⭐</span><div class="cd-txt"><h4>Rating</h4><p>5.0 ★ — Google Reviews లో Top!</p></div></div>
           </div>
           <div class="map-box">
@@ -1092,7 +1091,6 @@ footer::before{
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   </section>
@@ -1136,12 +1134,12 @@ footer::before{
     <div class="ft-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#" onclick="gp('home',null)">🏠 Home</a></li>
-        <li><a href="#" onclick="gp('about',null)">ℹ️ About Us</a></li>
-        <li><a href="#" onclick="gp('services',null)">🖨️ Services</a></li>
-        <li><a href="#" onclick="gp('portfolio',null)">🖼️ Gallery</a></li>
-        <li><a href="#" onclick="gp('reviews',null)">⭐ Reviews</a></li>
-        <li><a href="#" onclick="gp('contact',null)">📞 Contact</a></li>
+        <li><a href="javascript:void(0)" onclick="gp('home',null); return false;">🏠 Home</a></li>
+        <li><a href="javascript:void(0)" onclick="gp('about',null); return false;">ℹ️ About Us</a></li>
+        <li><a href="javascript:void(0)" onclick="gp('services',null); return false;">🖨️ Services</a></li>
+        <li><a href="javascript:void(0)" onclick="gp('portfolio',null); return false;">🖼️ Gallery</a></li>
+        <li><a href="javascript:void(0)" onclick="gp('reviews',null); return false;">⭐ Reviews</a></li>
+        <li><a href="javascript:void(0)" onclick="gp('contact',null); return false;">📞 Contact</a></li>
       </ul>
     </div>
     <div class="ft-col">
@@ -1269,19 +1267,15 @@ function closeLb(e) {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { document.getElementById('lb').classList.remove('open'); document.body.style.overflow=''; }});
 
-// ── FORM ──
-function submitF() {
-  const n = document.getElementById('fn');
-  const p = document.getElementById('fp');
-  const s = document.getElementById('fs');
-  let ok = true;
-  [n, p, s].forEach(f => { if (!f.value.trim()) { f.classList.add('err'); ok = false; } else f.classList.remove('err'); });
-  if (!ok) return;
-  const msg = document.getElementById('fsucc');
-  msg.classList.add('show');
-  [n, p, s, document.getElementById('fm')].forEach(f => f.value = '');
-  setTimeout(() => msg.classList.remove('show'), 5000);
-}
+// ── OPEN STATUS ──
+(function(){
+  const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const d = new Date();
+  document.getElementById('openTag').textContent =
+    '● Open Now — ' + days[d.getDay()] + ' ' +
+    d.getHours().toString().padStart(2,'0') + ':' +
+    d.getMinutes().toString().padStart(2,'0');
+})();
 </script>
 </body>
 </html>
